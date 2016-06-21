@@ -51,7 +51,6 @@ public class Index {
     }
     @RequestMapping(value = "/change")
     public ModelAndView change(Tels tels){
-        System.out.println(tels.getTelsid());
         ModelAndView result = new ModelAndView("redirect:/index");
         if(telsService.changeTels(tels)){
             result.addObject("result","changesuccess");
