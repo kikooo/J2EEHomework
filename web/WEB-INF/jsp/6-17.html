@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>asd</title>
+  <link href="" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+  function dochange(){
+    document.getElementById('hid-back').style.display="block";
+    document.getElementById('alt-hid').style.display="block";
+  }
+  function doclose(){
+    document.getElementById('hid-back').style.display="none";
+    document.getElementById('alt-hid').style.display="none";
+    document.getElementById('add-hid').style.display="none";
+  }
+  function doadd(){
+    document.getElementById('hid-back').style.display="block";
+    document.getElementById('add-hid').style.display="block";
+  }
+  </script>
+</head>
+<body>
+  <nav id="nav-bar">
+    <h1>通讯录列表</h1>
+    <form>
+      <input type="text" value="搜索联系人"/>
+      <input type="submit" value="搜索"/>
+      <input type="button" value="添加联系人" onclick="doadd()"/>
+    </form>
+    <div id="user">
+      kiko
+      <a href="#">[退出]</a>
+      <a href="#">[修改密码]</a>
+    </div>
+  </nav>
+  <div id="hid-back" class="hidden" style="display:none;"></div>
+  <div id="alt-hid" class="hidden" style="display:none;">
+    <form method="post">
+      <h2>修改联系人</h2>
+      <span>姓名：</span><input type="text" value="111"/>
+      <br>
+      <span>联系方式：</span><input type="tel" value="123456789"/>
+      <br>
+      <input class="btn" type="button" value="取消" onclick="doclose()"/>
+      <input class="btn" type="submit" value="确认修改"/>
+    </form>
+  </div>
+  <div id="add-hid" class="hidden" style="display:none;">
+    <form method="post">
+      <h2>添加联系人</h2>
+      <span>姓名：</span><input type="text"/>
+      <br>
+      <span>联系方式：</span><input type="tel"/>
+      <br>
+      <input class="btn" type="button" value="取消" onclick="doclose()"/>
+      <input class="btn" type="submit" value="确认添加"/>
+    </form>
+  </div>
+  <div class="con-col">
+    <div class="list-item">
+      <span class="con-name">姓名：sdasdasd1</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+    <div class="list-item">
+      <hr>
+      <span class="con-name">姓名：sdasdasd2</span>
+      <span class="con-tel">联系方式：asdgyuasdasdass</span>
+      <button onclick="dodelete()" class="btn">删除</button>
+      <button onclick="dochange()" class="btn">更改</button>
+    </div>
+  </div>
+</body>
+</html>
